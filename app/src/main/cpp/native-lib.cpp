@@ -12,3 +12,13 @@ Java_com_vpaypay_ffmpegapp_MainActivity_stringFromJNI(
     hello += avcodec_configuration();
     return env->NewStringUTF(hello.c_str());
 }
+extern "C"
+JNIEXPORT void JNICALL
+Java_com_vpaypay_ffmpegapp_MainActivity_start(JNIEnv *env, jobject thiz) {
+    // TODO: implement start()
+}
+extern "C"
+JNIEXPORT void JNICALL
+Java_com_vpaypay_ffmpegapp_MainActivity_stop(JNIEnv *env, jobject thiz) {
+    // TODO: implement stop()
+}

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FFmpegApp</string>
+    <string name="txt_start">开始推流</string>
+    <string name="txt_stop">停止推流</string>
 </resources>

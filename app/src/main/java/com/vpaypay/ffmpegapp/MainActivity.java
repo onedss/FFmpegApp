@@ -37,8 +37,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         TextView tv = binding.sampleText;
         tv.setText(stringFromJNI());
 
+        init();
         //for(int i=0;i<1000;i++) {
-            open("/sdcard/in1.mp4", this);
+            avopen("/sdcard/in1.mp4", this);
         //}
     }
 
@@ -48,7 +49,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     public native String stringFromJNI();
 
+    public native void init();
+
     public native boolean open(String url, Object handler);
+
+    public native boolean avopen(String url, Object handler);
 
     public native void start();
 
